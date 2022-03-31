@@ -1,0 +1,42 @@
+.btn {
+    background-color: var(--light-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__anchor {
+    text-decoration: none;
+    color: var(--dark-navy);
+    text-transform: uppercase;
+}
+
+.btn__new_game-vs-cpu {
+    color: var(--dark-navy);
+    width: 46rem;
+    height: 6.7rem;
+    border-radius: 1.5rem;
+    background-color: var(--light-yellow);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.25px;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    box-shadow: inset 0px -8px 0px #cc8b13;
+}
+
+.btn__new_game-vs-player {
+    color: var(--dark-navy);
+    width: 46rem;
+    height: 6.7rem;
+    border-radius: 1.5rem;
+    background-color: var(--light-blue);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.25px;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    box-shadow: inset 0px -8px 0px #118c87;
+}

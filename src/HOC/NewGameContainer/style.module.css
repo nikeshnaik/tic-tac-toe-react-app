@@ -1,0 +1,10 @@
+.NewGameContainer {
+    width: 46rem;
+    height: 47.1rem;
+    background-color: var(--dark-navy);
+    padding: 3.65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
