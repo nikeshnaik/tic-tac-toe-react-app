@@ -9,7 +9,7 @@ function Button(props) {
 
     return (
         <div className={`${styles.btn} ${stylesMapping[props.styleClass]} `}>
-            <a className={styles.btn__anchor}> {props.button_text}</a>
+            <a href="#newgame" className={styles.btn__anchor}> {props.button_text}</a>
         </div >
     );
 }
