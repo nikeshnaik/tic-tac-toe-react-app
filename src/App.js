@@ -1,5 +1,5 @@
 import './App.css';
-import NewGameLayout from './layouts/NewGameLayout';
+// import NewGameLayout from './layouts/NewGameLayout';
 import GameLayout from './layouts/GameLayout';
 
 function App() {

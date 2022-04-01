@@ -1,4 +1,3 @@
-import { Children } from 'react';
 import styles from './style.module.css'
 
 function Button(props) {
