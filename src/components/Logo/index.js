@@ -5,7 +5,10 @@ function Logo(props) {
     let styles_mapping = {
         "logo": styles.logo,
         "x-logo": styles['x-logo'],
-        "o-logo": styles['o-logo']
+        "o-logo": styles['o-logo'],
+        "x-logo-change_turn": styles["x-logo-change_turn"],
+        "o-logo-change_turn": styles["o-logo-change_turn"],
+        "restart-icon": styles["restart-icon"]
     }
 
     return (

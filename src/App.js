@@ -1,11 +1,14 @@
 import './App.css';
-import NewGameLayout from './layouts';
+import NewGameLayout from './layouts/NewGameLayout';
+import GameLayout from './layouts/GameLayout';
 
 function App() {
   return (
     <div className="App">
 
-      <NewGameLayout />
+      {/* <NewGameLayout /> */}
+
+      <GameLayout />
 
     </div >
   );

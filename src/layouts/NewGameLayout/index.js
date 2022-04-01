@@ -1,7 +1,7 @@
 import styles from './style.module.css'
-import Button from '../components/Button';
-import Logo from '../components/Logo';
-import Container from '../HOC/NewGameContainer';
+import Container from '../../HOC/NewGameContainer';
+import Logo from "../../components/Logo"
+import Button from '../../components/Button';
 
 
 
@@ -9,7 +9,7 @@ function NewGameLayout(props) {
 
 
     return (
-        <Container>
+        <Container width="46rem" height="47.1rem">
             <Logo src="./assets/logo.svg" alt="logo" styleClass="logo" />
             <div className={styles.select_player}>
                 <h4>PICK PLAYER 1'S MARK</h4>

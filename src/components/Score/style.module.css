@@ -1,0 +1,18 @@
+.player {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.764rem;
+    letter-spacing: 0.088rem;
+    font-weight: 500;
+    color: var(--dark-navy);
+}
+
+.score {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 3.24rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    color: var(--dark-navy);
+}
+

@@ -1,5 +1,5 @@
 .btn {
-    background-color: var(--light-yellow);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,3 +40,75 @@
     text-transform: uppercase;
     box-shadow: inset 0px -8px 0px #118c87;
 }
+
+
+.btn__change_turn{
+    width: 14rem;
+    height: 5.2rem;
+    display: flex;
+    padding: 1.3rem 3rem 1.9rem 3rem;
+    flex-direction: row;
+    box-shadow: inset 0px -4px 0px #10212A;
+    column-gap: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--semi-dark-navy);
+}
+
+.btn__change_turn > span {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.016rem;
+    letter-spacing: 0.05rem;
+    color: var(--silver);
+}
+
+.btn__restart {
+    width: 5.2rem;
+    height: 5.2rem;
+    filter: drop-shadow(0px 4px 4px 0 rgba(0, 0, 0, 0.25));    
+    /* Check the filter */
+    background-color: var(--silver);
+    border-radius: 1rem;
+}
+
+.btn__currentPlayer{
+    width: 14rem;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue);
+    padding: 1.3rem 4.15rem 1.1rem 4.15rem;
+    border-radius: 1.5rem;
+}
+
+
+
+.btn__ties_wrapper{
+    width: 14rem;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--silver);
+    padding: 1.3rem 4.15rem 1.1rem 4.15rem;
+    border-radius: 1.5rem;
+
+}
+
+.btn__opponentPlayer{
+    width: 14rem;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-yellow);
+    padding: 1.3rem 4.15rem 1.1rem 4.15rem;
+    border-radius: 1.5rem;
+
+}
+
+

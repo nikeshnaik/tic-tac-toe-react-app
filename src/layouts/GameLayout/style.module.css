@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    height: 5.2rem;
+    margin-bottom: 1.9rem;
+    align-items: center;
+}
+
+.stats_footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.9rem;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    height: 7.2rem;
+}
