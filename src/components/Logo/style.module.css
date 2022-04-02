@@ -19,7 +19,7 @@
     height: 2rem;
 }
 
-.o-logo-change_turn{
+.o-logo-change_turn {
     width: 2rem;
     height: 2rem;
 }
@@ -27,4 +27,14 @@
 .restart-icon {
     width: 2rem;
     height: 2rem;
+}
+
+.x-logo-grid {
+    width: 6.4rem;
+    height: 6.4rem;
+}
+
+.o-logo-grid {
+    width: 6.4rem;
+    height: 6.4rem;
 }

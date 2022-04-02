@@ -8,7 +8,9 @@ function Logo(props) {
         "o-logo": styles['o-logo'],
         "x-logo-change_turn": styles["x-logo-change_turn"],
         "o-logo-change_turn": styles["o-logo-change_turn"],
-        "restart-icon": styles["restart-icon"]
+        "restart-icon": styles["restart-icon"],
+        "o-logo-grid": styles["o-logo-grid"],
+        "x-logo-grid": styles["x-logo-grid"]
     }
 
     return (
