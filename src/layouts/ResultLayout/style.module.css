@@ -1,0 +1,41 @@
+.result_layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 47.5rem 4.5rem 47.5rem;
+    margin-top: 2rem;
+    background-color: var(--semi-dark-navy);
+}
+
+.result_layout>h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.016rem;
+    letter-spacing: 0.1rem;
+    color: var(--silver);
+}
+
+.logo_with_text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.4rem;
+    align-items: center;
+    padding: 1.6rem 0 2.4rem 0;
+}
+
+.logo_with_text>span {
+    color: var(--light-yellow);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.04rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+.button_section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.6rem;
+}

@@ -9,7 +9,9 @@ function Button(props) {
         "restart": styles["btn__restart"],
         "currentPlayer": styles["btn__currentPlayer"],
         "ties_wrapper": styles["btn__ties_wrapper"],
-        "opponentPlayer": styles["btn__opponentPlayer"]
+        "opponentPlayer": styles["btn__opponentPlayer"],
+        "quit": styles["btn__quit"],
+        "next_round": styles["btn__next_round"]
     }
 
     return (

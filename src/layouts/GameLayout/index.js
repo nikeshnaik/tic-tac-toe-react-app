@@ -6,7 +6,7 @@ import ScoreBox from "../../components/Score";
 import styles from "./style.module.css"
 
 
-function GameLayout() {
+function GameLayout(props) {
     return (
         <Container width="46rem" height="62.3rem">
 

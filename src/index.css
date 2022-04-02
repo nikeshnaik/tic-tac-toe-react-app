@@ -31,7 +31,4 @@ body {
   background-color: var(--dark-navy);
 }
 
-main {
-  /* display: block;
-  position: relative; */
-}
+main {}
