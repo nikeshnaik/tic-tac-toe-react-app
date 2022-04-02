@@ -1,5 +1,5 @@
 import Logo from "../Logo";
-import styles from "./style.module.css"
+// import styles from "./style.module.css"
 
 function GridElement(props) {
 

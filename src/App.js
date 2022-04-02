@@ -1,7 +1,7 @@
 import './App.css';
 // import NewGameLayout from './layouts/NewGameLayout'p;
 import GameLayout from './layouts/GameLayout';
-import ResultLayout from './layouts/ResultLayout';
+// import ResultLayout from './layouts/ResultLayout';
 
 function App() {
   return (
