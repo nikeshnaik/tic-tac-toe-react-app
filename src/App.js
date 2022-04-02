@@ -10,7 +10,7 @@ function App() {
       {/* <NewGameLayout /> */}
 
 
-      <ResultLayout />
+      {/* <ResultLayout /> */}
       <GameLayout />
 
     </div >

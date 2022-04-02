@@ -12,14 +12,20 @@
     border-radius: 1.5rem;
     box-shadow: inset 0px -8px 0px #10212A;
     background-color: var(--semi-dark-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .gridChild2 {
     grid-area: 1 / 2 / 2 / 3;
     border-radius: 1.5rem;
     box-shadow: inset 0px -8px 0px #10212A;
-
     background-color: var(--semi-dark-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridChild3 {
@@ -28,6 +34,9 @@
     box-shadow: inset 0px -8px 0px #10212A;
 
     background-color: var(--semi-dark-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridChild4 {
@@ -36,6 +45,9 @@
     box-shadow: inset 0px -8px 0px #10212A;
 
     background-color: var(--semi-dark-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridChild5 {
@@ -44,6 +56,9 @@
     box-shadow: inset 0px -8px 0px #10212A;
 
     background-color: var(--semi-dark-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -53,6 +68,9 @@
     box-shadow: inset 0px -8px 0px #10212A;
 
     background-color: var(--semi-dark-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridChild7 {
@@ -61,6 +79,9 @@
     box-shadow: inset 0px -8px 0px #10212A;
 
     background-color: var(--semi-dark-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridChild8 {
@@ -69,6 +90,9 @@
 
     background-color: var(--semi-dark-navy);
     box-shadow: inset 0px -8px 0px #10212A;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridChild9 {
@@ -77,4 +101,7 @@
 
     background-color: var(--semi-dark-navy);
     box-shadow: inset 0px -8px 0px #10212A;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
