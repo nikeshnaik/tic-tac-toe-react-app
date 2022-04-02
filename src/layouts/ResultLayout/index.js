@@ -1,5 +1,4 @@
 import styles from "./style.module.css"
-import Container from "../../HOC/NewGameContainer";
 import Logo from "../../components/Logo";
 import Button from "../../components/Button";
 import Modal from "../../HOC/Modal";
