@@ -3,10 +3,11 @@ import Logo from "../Logo";
 
 function GridElement(props) {
 
+    let logo_name = props.hover ? `icon-${props.icon}-outline.svg` : `icon-${props.icon}.svg`
 
     return (
         <>
-            <Logo src={`./assets/icon-${props.icon}.svg`} alt="logo" />
+            <Logo src={`./assets/${logo_name}`} alt="logo" />
 
         </>);
 }
