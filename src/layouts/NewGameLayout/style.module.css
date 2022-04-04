@@ -45,12 +45,15 @@ h4 {
 
 .x_logo_highlight:focus-within {
     background-color: var(--silver);
-    transition: 0s
+    transition: 0s;
+    color: var(--dark-navy);
 }
+
 
 .x_logo_highlight:not(active) {
     background-color: var(--dark-navy);
     transition: 0s;
+    color: var(--silver);
 }
 
 
@@ -68,11 +71,14 @@ h4 {
 .o_logo_highlight:focus-within {
     background-color: var(--silver);
     transition: 0s;
+    color: var(--dark-navy);
 }
 
 .o_logo_highlight:not(active) {
     background-color: var(--dark-navy);
     transition: 0s;
+    color: var(--silver);
+
 }
 
 

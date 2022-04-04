@@ -11,13 +11,15 @@ function GameLayout(props) {
         <Container width="46rem" height="62.3rem">
 
             <div className={styles.header}>
-                <Logo src="./assets/logo.svg" alt="logo" styleClass="logo"></Logo>
+                <Logo src="logo" alt="logo" styleClass="logo"></Logo>
                 <Button styleClass="change_turn">
-                    <Logo src="./assets/icon-x.svg" alt="icon-x" styleClass="x-logo-change_turn"></Logo>
+                    <div className="x-logo-change-turn">
+                        <Logo src="icon_x" alt="icon-x" styleClass="x-logo-change_turn"></Logo>
+                    </div>
                     <span>TURN</span>
                 </Button>
                 <Button styleClass="restart">
-                    <Logo src="./assets/icon-restart.svg" alt="restart" styleClass="restart-icon"></Logo>
+                    <Logo src="icon_restart" alt="restart" styleClass="restart-icon"></Logo>
                 </Button>
             </div>
 

@@ -10,15 +10,17 @@ function NewGameLayout(props) {
 
     return (
         <Container width="46rem" height="47.1rem">
-            <Logo src="./assets/logo.svg" alt="logo" styleClass="logo" />
+            <div className="logo">
+                <Logo src="logo" alt="logo" styleClass="logo" />
+            </div>
             <div className={styles.select_player}>
                 <h4>PICK PLAYER 1'S MARK</h4>
                 <div className={styles.logo_container}>
                     <div className={styles.x_logo_highlight} tabIndex="0">
-                        <Logo src="./assets/icon-x.svg" alt="x" styleClass="x-logo" />
+                        <Logo src="icon_x" alt="x" styleClass="x-logo" />
                     </div>
                     <div className={styles.o_logo_highlight} tabIndex="1">
-                        <Logo src="./assets/icon-o.svg" alt="o" styleClass="o-logo" />
+                        <Logo src="icon_o" alt="o" styleClass="o-logo" />
                     </div>
                 </div>
                 <h6>REMEMBER : X GOES FIRST</h6>
