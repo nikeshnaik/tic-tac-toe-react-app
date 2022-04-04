@@ -13,7 +13,7 @@ function ResultLayout(props) {
 
                 <h4>oh, no you lost</h4>
                 <div className={styles.logo_with_text}>
-                    <Logo src="icon_o" styleClass="o-logo-grid" />
+                    <Logo src="icon_o" styleClass="o-result-logo" />
                     <span>takes the round</span>
                 </div>
                 <div className={styles.button_section}>

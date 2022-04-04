@@ -37,3 +37,16 @@
     width: 6.4rem;
     height: 6.4rem;
 }
+
+.o-result-logo {
+    color: var(--light-yellow);
+
+    width: 6.4rem;
+    height: 6.4rem;
+}
+
+.x-result-logo {
+    color: var(--light-blue);
+    width: 6.4rem;
+    height: 6.4rem;
+}

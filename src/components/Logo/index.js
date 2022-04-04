@@ -1,10 +1,10 @@
 import styles from './style.module.css'
-import { ReactComponent as Icon_o } from '../../assets/icon-o.svg'
-import { ReactComponent as Icon_x } from '../../assets/icon-x.svg'
-import { ReactComponent as Logo_icon } from '../../assets/logo.svg'
-import { ReactComponent as Restart_icon } from '../../assets/icon-restart.svg'
-import { ReactComponent as Icons_o_outline } from '../../assets/icon-o-outline.svg'
-import { ReactComponent as Icons_x_outline } from '../../assets/icon-x-outline.svg'
+import { ReactComponent as IconO } from '../../assets/icon-o.svg'
+import { ReactComponent as IconX } from '../../assets/icon-x.svg'
+import { ReactComponent as LogoIcon } from '../../assets/logo.svg'
+import { ReactComponent as RestartIcon } from '../../assets/icon-restart.svg'
+import { ReactComponent as IconsOOutline } from '../../assets/icon-o-outline.svg'
+import { ReactComponent as IconsXOutline } from '../../assets/icon-x-outline.svg'
 
 function Logo(props) {
 
@@ -16,17 +16,18 @@ function Logo(props) {
         "o-logo-change_turn": styles["o-logo-change_turn"],
         "restart-icon": styles["restart-icon"],
         "o-logo-grid": styles["o-logo-grid"],
-        "x-logo-grid": styles["x-logo-grid"]
+        "x-logo-grid": styles["x-logo-grid"],
+        "o-result-logo": styles["o-result-logo"],
+        "x-result-logo": styles["x-result-logo"]
     }
 
     let icon_mapping = {
-        "logo": <Logo_icon alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 72 32' />,
-        "icon_o": <Icon_o alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
-        "icon_x": <Icon_x alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
-        "icon_o_outline": <Icons_o_outline alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 68 68' />,
-        "icon_x_outline": <Icons_x_outline alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
-        "icon_restart": <Restart_icon alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 20 20' />
-
+        "logo": <LogoIcon alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 72 32' />,
+        "icon_o": <IconO alt="icon-0" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
+        "icon_x": <IconX alt="icon-x" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
+        "icon_o_outline": <IconsOOutline alt="icon-o-outline" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 68 68' />,
+        "icon_x_outline": <IconsXOutline alt="icon-x-outline" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
+        "icon_restart": <RestartIcon alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 20 20' />
     }
 
     return (
