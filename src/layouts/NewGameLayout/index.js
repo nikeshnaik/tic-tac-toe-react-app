@@ -14,10 +14,10 @@ function NewGameLayout(props) {
             <div className={styles.select_player}>
                 <h4>PICK PLAYER 1'S MARK</h4>
                 <div className={styles.logo_container}>
-                    <div className={styles.x_logo_highlight}>
+                    <div className={styles.x_logo_highlight} tabIndex="0">
                         <Logo src="./assets/icon-x.svg" alt="x" styleClass="x-logo" />
                     </div>
-                    <div className={styles.o_logo_highlight}>
+                    <div className={styles.o_logo_highlight} tabIndex="1">
                         <Logo src="./assets/icon-o.svg" alt="o" styleClass="o-logo" />
                     </div>
                 </div>
