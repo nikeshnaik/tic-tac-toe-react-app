@@ -1,4 +1,5 @@
 import styles from './style.module.css'
+import initGameState from '../../Game/init_state';
 
 function Button(props) {
 
@@ -14,8 +15,29 @@ function Button(props) {
         "next_round": styles["btn__next_round"]
     }
 
+    function handleMouseClickGeneric(event) {
+
+        console.log(event.currentTarget, event.target, stylesMapping[props.styleClass])
+
+        if (event.currentTarget.classList.contains(stylesMapping[props.styleClass])) {
+
+            let newGameState = initGameState(props.gameState.player1, props.gameState.player2)
+
+            // Store old game state somehwere
+
+            console.log(newGameState)
+            props.setGameState({ ...newGameState })
+
+
+        }
+
+    }
+
+
+
+
     return (
-        <div className={`${styles.btn} ${stylesMapping[props.styleClass]} `}>
+        <div className={`${styles.btn} ${stylesMapping[props.styleClass]}`} onClick={handleMouseClickGeneric}>
             {props.children}
             <a href="#newgame" className={styles.btn__anchor}> {props.button_text}</a>
         </div >

@@ -27,7 +27,7 @@ function GameLayout(props) {
                     </div>
                     <span>TURN</span>
                 </Button>
-                <Button styleClass="restart">
+                <Button styleClass="restart" gameState={props.gameState} setGameState={props.setState}>
                     <Logo src="icon_restart" alt="restart" styleClass="restart-icon"></Logo>
                 </Button>
             </div >

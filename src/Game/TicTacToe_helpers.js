@@ -56,6 +56,7 @@ function checkWinner(state, row, col) {
 
             let winner = state.currentPlayer === "X" ? "Player1" : "Player2"
             console.log("winner is  -->", winner)
+            state.winner = state.currentPlayer
             return [state, state.currentPlayer]
 
         }
