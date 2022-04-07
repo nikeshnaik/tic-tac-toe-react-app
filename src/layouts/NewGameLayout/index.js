@@ -7,7 +7,6 @@ import Button from '../../components/Button';
 
 function NewGameLayout(props) {
 
-
     return (
         <Container width="46rem" height="47.1rem">
             <div className="logo">

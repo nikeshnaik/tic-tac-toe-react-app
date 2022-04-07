@@ -1,9 +1,10 @@
 import Logo from "../Logo";
 // import styles from "./style.module.css"
 
-function GridElement(props) {
+function Square(props) {
 
-    let logo_name = props.hover ? `icon_${props.icon}_outline` : `icon_${props.icon}`
+
+    let logo_name = `icon_${props.icon}`
     let logo_class = props.icon === "x" ? "x-logo-grid" : "o-logo-grid"
 
     return (
@@ -12,4 +13,4 @@ function GridElement(props) {
         </>);
 }
 
-export default GridElement;
+export default Square;

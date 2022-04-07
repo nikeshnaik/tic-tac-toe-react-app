@@ -3,25 +3,7 @@ class TicTacToe {
 
     constructor(player1, player2) {
 
-        this.state = {
-            "player1": player1,
-            "player2": player2,
-            "X": 1,
-            "O": -1,
-            "currentPlayer": "X",
-            "grid": [
-                [-1, -1, -1],
-                [-1, -1, -1],
-                [-1, -1, -1]
 
-            ],
-            "winner": null,
-            "rows": [0, 0, 0],
-            "cols": [0, 0, 0],
-            "diagonal": 0,
-            "antidiagonal": 0,
-            "moves": []
-        }
     }
 
     getNextPlayer() {
@@ -151,7 +133,7 @@ class TicTacToe {
 
 export default TicTacToe
 
-let game = new TicTacToe("O", "X")
+// let game = new TicTacToe("O", "X")
 // game.CPUPlayerMove()
 // game.CPUPlayerMove()
 // game.CPUPlayerMove()
@@ -162,12 +144,12 @@ let game = new TicTacToe("O", "X")
 // game.CPUPlayerMove()
 // game.CPUPlayerMove()
 
-game.makeMove(0, 0)
-game.capturePlayer2Moves(0, 2)
-game.makeMove(1, 0)
-game.capturePlayer2Moves(1, 2)
-game.makeMove(2, 0)
-console.log(game.state.grid)
+// game.makeMove(0, 0)
+// game.capturePlayer2Moves(0, 2)
+// game.makeMove(1, 0)
+// game.capturePlayer2Moves(1, 2)
+// game.makeMove(2, 0)
+// console.log(game.state.grid)
 
 
 
