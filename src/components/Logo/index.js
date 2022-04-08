@@ -18,16 +18,16 @@ function Logo(props) {
         "o-logo-grid": styles["o-logo-grid"],
         "x-logo-grid": styles["x-logo-grid"],
         "o-result-logo": styles["o-result-logo"],
-        "x-result-logo": styles["x-result-logo"]
+        "x-result-logo": styles["x-result-logo"],
+        "o-logo-grid-outline": styles["o-logo-grid-outline"],
+        "x-logo-grid-outline": styles["x-logo-grid-outline"]
     }
 
     let icon_mapping = {
         "logo": <LogoIcon alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 72 32' />,
         "icon_o": <IconO alt="icon-0" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
         "icon_x": <IconX alt="icon-x" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
-        "icon_o_outline": <IconsOOutline alt="icon-o-outline" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 68 68' />,
-        "icon_x_outline": <IconsXOutline alt="icon-x-outline" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 64 64' />,
-        "icon_restart": <RestartIcon alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 20 20' />
+        "icon_restart": <RestartIcon alt="logo" className={styles_mapping[props.styleClass]} width="100%" height="100%" viewBox='0 0 20 20' />,
     }
 
     return (

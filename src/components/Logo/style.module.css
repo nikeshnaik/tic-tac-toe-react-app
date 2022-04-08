@@ -34,9 +34,33 @@
 }
 
 .o-logo-grid {
+    width: 7rem;
+    height: 7rem;
+}
+
+
+.x-logo-grid-outline {
+    width: 6.4rem;
+    height: 6.4rem
+}
+
+.o-logo-grid-outline {
+    width: 7rem;
+    height: 7rem;
+}
+
+.x-logo-grid-outline:hover {
+    content: url(../../assets/icon-x-outline.svg);
     width: 6.4rem;
     height: 6.4rem;
 }
+
+.o-logo-grid-outline:hover {
+    content: url(../../assets//icon-o-outline.svg);
+    width: 7rem;
+    height: 7rem;
+}
+
 
 .o-result-logo {
     color: var(--light-yellow);
