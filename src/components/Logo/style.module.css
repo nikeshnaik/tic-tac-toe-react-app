@@ -16,11 +16,13 @@
 .x-logo-change_turn {
     width: 2rem;
     height: 2rem;
+    color: var(--light-blue);
 }
 
 .o-logo-change_turn {
     width: 2rem;
     height: 2rem;
+    color: var(--light-yellow);
 }
 
 .restart-icon {
@@ -31,13 +33,14 @@
 .x-logo-grid {
     width: 6.4rem;
     height: 6.4rem;
+    color: var(--light-blue)
 }
 
 .o-logo-grid {
     width: 7rem;
     height: 7rem;
+    color: var(--light-yellow)
 }
-
 
 .x-logo-grid-outline {
     width: 6.4rem;
@@ -63,14 +66,13 @@
 
 
 .o-result-logo {
-    color: var(--light-yellow);
-
     width: 6.4rem;
     height: 6.4rem;
+    color: var(--light-yellow);
 }
 
 .x-result-logo {
-    color: var(--light-blue);
     width: 6.4rem;
     height: 6.4rem;
+    color: var(--light-blue);
 }
