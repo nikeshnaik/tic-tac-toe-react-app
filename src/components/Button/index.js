@@ -8,9 +8,9 @@ function Button(props) {
         "new_game-vs-player": styles["btn__new_game-vs-player"],
         "change_turn": styles["btn__change_turn"],
         "restart": styles["btn__restart"],
-        "currentPlayer": styles["btn__currentPlayer"],
+        "Player1": styles["btn__Player1"],
         "ties_wrapper": styles["btn__ties_wrapper"],
-        "opponentPlayer": styles["btn__opponentPlayer"],
+        "Player2": styles["btn__Player2"],
         "quit": styles["btn__quit"],
         "next_round": styles["btn__next_round"]
     }
@@ -25,11 +25,10 @@ function Button(props) {
 
             // Store old game state somehwere
 
-            console.log(newGameState)
             props.setGameState({ ...newGameState })
 
-
         }
+
 
     }
 

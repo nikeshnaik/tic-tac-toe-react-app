@@ -97,7 +97,7 @@
 }
 
 
-.btn__currentPlayer {
+.btn__Player1 {
     width: 14rem;
     height: 7.2rem;
     display: flex;
@@ -124,7 +124,7 @@
 
 }
 
-.btn__opponentPlayer {
+.btn__Player2 {
     width: 14rem;
     height: 7.2rem;
     display: flex;

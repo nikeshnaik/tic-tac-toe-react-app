@@ -5,29 +5,42 @@ import Modal from "../../HOC/Modal";
 
 
 function ResultLayout(props) {
-    return (
 
-        <Modal>
+    if (props.render) {
 
-            <div className={styles.result_layout}>
+        let logo_src = `icon_${props.winnerDetails.winner.toLowerCase()}`
 
-                <h4>oh, no you lost</h4>
-                <div className={styles.logo_with_text}>
-                    <Logo src="icon_o" styleClass="o-result-logo" />
-                    <span>takes the round</span>
+        let logo_styleclass = `${props.winnerDetails.winner.toLowerCase()}-result-logo`
+
+        let msg = props.winnerDetails.winner_name === "you" ? "You Won" : "Oh No, You Lost"
+
+        return (
+
+            <Modal>
+
+                <div className={styles.result_layout}>
+
+                    <h4>{msg}</h4>
+                    <div className={styles.logo_with_text}>
+                        <Logo src={logo_src} styleClass={logo_styleclass} />
+                        <span>takes the round</span>
+                    </div>
+                    <div className={styles.button_section}>
+                        <Button button_text="QUIT" styleClass="quit" />
+                        <Button button_text="NEXT ROUND" gameState={props.gameState} setState={props.setState} styleClass="next_round" />
+                    </div>
+
+
                 </div>
-                <div className={styles.button_section}>
-                    <Button button_text="QUIT" styleClass="quit" />
-                    <Button button_text="NEXT ROUND" styleClass="next_round" />
-                </div>
+            </Modal>
 
 
-            </div>
-        </Modal>
+        );
 
-
-    );
-
+    }
+    else {
+        return (<></>)
+    }
 }
 
 export default ResultLayout;

@@ -24,7 +24,9 @@ function checkWinner(state, row, col) {
     // Algo from https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/solution/
 
 
-    console.log("state in checkwinner", state)
+    if (state.winner === "X" || state.winner === "O") {
+        return [state, state.winner]
+    }
 
     let n = 3
 
@@ -45,7 +47,6 @@ function checkWinner(state, row, col) {
     }
 
     let currentMoveUpdatedScore = [state.rows[row], state.cols[col], state.antidiagonal, state.diagonal]
-    console.log(currentMoveUpdatedScore)
 
     for (let element in currentMoveUpdatedScore) {
 
@@ -54,16 +55,16 @@ function checkWinner(state, row, col) {
 
         if (Math.abs(currentMoveUpdatedScore[element]) === n) {
 
-            let winner = state.currentPlayer === "X" ? "Player1" : "Player2"
-            console.log("winner is  -->", winner)
             state.winner = state.currentPlayer
+            console.log("WInner is ", state.winner)
             return [state, state.currentPlayer]
 
         }
 
     };
 
-    console.log("draw or pending")
+    console.log('is draw or pending -->', state.moves.length === (n * n) ? "Draw" : "Pending")
+
     return [state, state.moves.length === (n * n) ? "Draw" : "Pending"]
 
 }

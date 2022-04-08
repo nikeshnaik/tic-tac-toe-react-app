@@ -32,18 +32,21 @@ function GameLayout(props) {
                 </Button>
             </div >
 
-            <Board width="46rem" height="46.1rem" gameState={props.gameState} setGameState={props.setState} />
+            <Board width="46rem" height="46.1rem" gameState={props.gameState} setGameState={props.setState} globalState={props.globalState} setGlobalState={props.setGlobalState} />
 
 
             <div className={styles.stats_footer}>
-                <Button styleClass="currentPlayer">
-                    <ScoreBox player="current" player_name="X(YOU)" player_mark="x" score="0" />
+                <Button styleClass="Player1">
+                    {/* console.log({`${props.globalState.player1_mark}(${props.globalState.player1})`}, {props.globalState.player1_score})
+                    console.log({`${props.globalState.player2_mark}(${props.globalState.player2})`}, {props.globalState.player2_score}) */}
+
+                    <ScoreBox player="player1" player_name={`${props.globalState.player1_mark}(${props.globalState.player1})`} score={props.globalState.player1_score} />
                 </Button>
                 <Button styleClass="ties_wrapper">
-                    <ScoreBox player="ties" player_name="TIES" player_mark="ties" score="0" />
+                    <ScoreBox player="ties" player_name="TIES" score="0" />
                 </Button>
-                <Button styleClass="opponentPlayer">
-                    <ScoreBox player="opponent" player_name="O(CPU)" player_mark="O" score="0" />
+                <Button styleClass="Player2">
+                    <ScoreBox player="player2" player_name={`${props.globalState.player2_mark}(${props.globalState.player2})`} score={props.globalState.player2_score} />
                 </Button>
             </div>
 

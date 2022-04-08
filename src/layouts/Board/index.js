@@ -2,6 +2,7 @@ import styles from './style.module.css'
 import Square from '../../components/Square'
 import { useState } from 'react'
 import { checkWinner, getNextPlayer } from '../../Game/TicTacToe_helpers'
+import ResultLayout from '../ResultLayout'
 
 
 function Board(props) {
@@ -15,23 +16,61 @@ function Board(props) {
 
     function handleMouseClick(event) {
 
+
+        let oldGlobalState = props.globalState
+
         let [row, col] = eval(event.currentTarget.dataset.loc)
 
         let oldGameState = props.gameState
+
         oldGameState.grid[row][col] = props.gameState.currentPlayer.toLowerCase()
+
+        oldGameState.moves.push([row, col])
 
         let [updatedState, results] = checkWinner(oldGameState, row, col)
 
-        updatedState.moves.push(row, col)
+        console.log("update state results -->", [updatedState, results])
+
+        if ((updatedState.winner === "X" || updatedState.winner === "O")) {
+
+            console.log("I am inside second round of winner ")
+            console.log(oldGlobalState)
+
+            if (updatedState.winner === "X") {
+
+                oldGlobalState["player1_score"] = oldGlobalState["player1_score"] + 1
+
+            } else if (updatedState.winner === "O") {
+
+                oldGlobalState["player2_score"] = oldGlobalState["player2_score"] + 1
+
+            }
+
+            oldGlobalState.games_played = + 1
+            props.setGameState({ ...updatedState })
+
+            oldGlobalState.gameHistory.push(props.gameState)
+            props.setGlobalState({ ...oldGlobalState })
+
+
+        } else if (results === "Draw") {
+
+
+            oldGlobalState.gameHistory.push(props.gameState)
+            oldGlobalState.games_played = + 1
+            oldGlobalState["ties"] = + 1
+
+            props.setGameState({ ...updatedState })
+            props.setGlobalState({ ...oldGlobalState })
+
+        }
+
 
         updatedState.currentPlayer = getNextPlayer(updatedState)
 
         props.setGameState({ ...updatedState })
 
-
-
     }
-
 
 
     return (
