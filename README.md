@@ -1,3 +1,10 @@
+### Live Site
+
+https://relaxed-phoenix-caa714.netlify.app/
+
+
+Notes: The Game Logic State Management is needs some refactoring. Will revisit once got free time.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -20,6 +27,3 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Live Site
-
-https://relaxed-phoenix-caa714.netlify.app/
