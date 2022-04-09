@@ -12,7 +12,8 @@ function ResultLayout(props) {
 
         let logo_styleclass = `${props.winnerDetails.winner.toLowerCase()}-result-logo`
 
-        let msg = props.winnerDetails.winner_name === "you" ? "You Won" : "Oh No, You Lost"
+        let msg = props.winnerDetails.winner_name === "you" ? props.globalState.player1 === "Player 1" ? "Player 1 Won" : "You Won" : props.globalState.player2 === "CPU" ? "Oh No, You Lost" : "Player 2 Won"
+
 
         return (
 

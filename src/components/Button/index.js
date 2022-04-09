@@ -19,7 +19,7 @@ function Button(props) {
 
         console.log(event.currentTarget, event.target, stylesMapping[props.styleClass])
 
-        if (event.currentTarget.classList.contains(stylesMapping[props.styleClass])) {
+        if (event.currentTarget.className.includes("restart")) {
 
             let newGameState = initGameState(props.gameState.player1, props.gameState.player2)
 
@@ -28,6 +28,21 @@ function Button(props) {
             props.setGameState({ ...newGameState })
 
         }
+
+        if (event.currentTarget.className.includes("new_game-vs-cpu")) {
+            props.globalState.new_game = false
+            props.globalState.player1 = "you"
+            props.globalState.player2 = "CPU"
+            props.setGlobalState({ ...props.globalState })
+        }
+
+        if (event.currentTarget.className.includes("new_game-vs-player")) {
+            props.globalState.new_game = false
+            props.globalState.player1 = "Player 1"
+            props.globalState.player2 = "Player 2"
+            props.setGlobalState({ ...props.globalState })
+        }
+
 
 
     }

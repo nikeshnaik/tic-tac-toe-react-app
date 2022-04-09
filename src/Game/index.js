@@ -2,6 +2,7 @@ import { useState } from "react";
 import GameLayout from "../layouts/GameLayout";
 import ResultLayout from "../layouts/ResultLayout";
 import initGameState from "./init_state";
+import NewGameLayout from "../layouts/NewGameLayout"
 
 function Game(player1, player2) {
 
@@ -24,18 +25,23 @@ function Game(player1, player2) {
         player1_mark: "X",
         player2_mark: "O",
         ties: 0,
-        gameHistory: []
+        gameHistory: [],
+        new_game: true
     })
 
     let winner_details = {
         winner: state.winner,
         winner_name: state.winner === "X" ? globalState.player1 : globalState.player2,
+
     }
+    console.log("render", globalState.new_game)
 
     return (
+
         <>
+            <NewGameLayout render={globalState.new_game} globalState={globalState} setGlobalState={setGlobalState} />
             <ResultLayout gameState={state} setState={setState} globalState={globalState} setGlobalState={setGlobalState} render={state.winner === "X" || state.winner === "O" ? true : false} winnerDetails={winner_details} />
-            < GameLayout gameState={state} setState={setState} globalState={globalState} setGlobalState={setGlobalState} />
+            < GameLayout render={!globalState.new_game} gameState={state} setState={setState} globalState={globalState} setGlobalState={setGlobalState} />
         </>
 
     )
